@@ -1,0 +1,26 @@
+{
+  "name": "mads",
+  "version": "0.0.1",
+  "description": "a mini math libray",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapjs/mads.git"
+  },
+  "keywords": [
+    "math",
+    "add",
+    "sub",
+    "mul",
+    "div"
+  ],
+  "author": "mailhap@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hapjs/mads/issues"
+  },
+  "homepage": "https://github.com/hapjs/mads#readme"
+}
