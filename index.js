@@ -10,8 +10,8 @@ function cal (type, a, b) {
     var t = Math.pow(10, d)
     
     // 解决小数乘法中可能出现的丢失精度问题
-    a = (a * t).toFixed(0)
-    b = (b * t).toFixed(0)
+    a = +(a * t).toFixed(0)
+    b = +(b * t).toFixed(0)
 
     switch (type) {
         case 'add':

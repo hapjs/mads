@@ -1,4 +1,4 @@
-# mads
+避免小数精度丢失的加减乘除方法
 
 ### usage 用法:
 
@@ -29,8 +29,8 @@ function cal (type, a, b) {
     var t = Math.pow(10, d)
     
     // 解决小数乘法中可能出现的丢失精度问题
-    a = (a * t).toFixed(0)
-    b = (b * t).toFixed(0)
+    a = +(a * t).toFixed(0)
+    b = +(b * t).toFixed(0)
 
     switch (type) {
         case 'add':
@@ -48,4 +48,5 @@ export const add = function (a, b) { return cal('add', a, b) }
 export const sub = function (a, b) { return cal('sub', a, b) }
 export const mul = function (a, b) { return cal('mul', a, b) }
 export const div = function (a, b) { return cal('div', a, b) }
+
 ```
