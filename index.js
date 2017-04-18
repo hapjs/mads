@@ -9,7 +9,8 @@ function cal (type, a, b) {
     var d = Math.max(decpos(a), decpos(b))
     var t = Math.pow(10, d)
     
-    // 解决小数乘法中可能出现的丢失精度问题
+    // 先把参与运算的数转换成整数
+    // toFixed(0) 解决小数乘法中可能出现的丢失精度问题
     a = +(a * t).toFixed(0)
     b = +(b * t).toFixed(0)
 
